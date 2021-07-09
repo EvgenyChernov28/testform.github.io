@@ -31,13 +31,14 @@ body {
     cursor: pointer;
 }
 .card button {
-    width: 100%;
+    width: calc(100% - 10px);
     background-color: #23c967;
     border: none;
     border-radius: 10px;
     padding: 10px 0;
     color: #fff;
     cursor: pointer;
+    margin-top: 20px;
 }
 .card button:hover {
     background-color: #1fb45d;
@@ -105,4 +106,22 @@ body {
 }
 .radio input:checked ~ div p{
     color: #1fb45d;
+}
+
+
+.all-products{
+    height: 460px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+.all-products::-webkit-scrollbar{
+    width: 4px;
+    background-color: #E1E3EE;
+    border-radius: 2px;
+}
+.all-products::-webkit-scrollbar-thumb{
+    width: 4px;
+    background-color: #23C967;
+    border-radius: 2px;
 }
