@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e5e5e5;
+}
+.card-none{
+    display: none;
+}
+.card {
+    margin: auto;
+    margin-top: 30px;
+    width: 440px;
+    height: 535px;
+    background: white;
+    padding: 35px;
+    border-radius: 0 50px 50px;
+    box-shadow: 0 0 15px #b0b6d4;
+}
+.card input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.card input::placeholder {
+    color: #d0d3e2;
+}
+
+.card a {
+    text-decoration: none;
+    color: #23c967;
+    cursor: pointer;
+}
+.card button {
+    width: 100%;
+    background-color: #23c967;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #1fb45d;
+}
+
+.secure-info {
+    margin-top: 10px;
+    text-align: center;
+    color: #afb4cc;
+}
+
+.product-list {
+    border: 2px solid #e1e3ee;
+    border-radius: 20px;
+    margin-bottom: 23px;
+    overflow: hidden;
+}
+.product-list input {
+    width: 20px;
+    margin: 0 30px 0 17px;
+    height: 22px;
+}
+.product-list h3,
+.product-list p {
+    margin: 5px 0;
+}
+.product-list > label {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e1e3ee;
+    height: 70px;
+}
+.product-list label:last-child {
+    border: none;
+}
+.product-list > label:hover {
+    background-color: #f4f5fa;
+}
+.radio {
+    cursor: pointer;
+}
+.radio input {
+    display: none; 
+}
+.radio span {
+    position: relative; 
+    display: inline-block;
+    width: 22px;
+    height: 22px; 
+    border-radius: 50%;
+    border: red;
+    box-shadow: inset 0 0 2px #1fb45d;
+    margin: 0 15px;
+}
+
+.radio input:checked + span::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background: #1fb45d;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.radio input:checked ~ div p{
+    color: #1fb45d;
+}

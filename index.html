@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path d="M30.0675 16C31.1348 16 32.012 16.8683 31.8835 17.9279C31.534 20.8067 30.4067 23.5496 28.6059 25.8535C26.4066 28.6672 23.3291 30.6642 19.8636 31.5265C16.398 32.3889 12.7436 32.067 9.48209 30.6122C6.2206 29.1574 3.53959 26.6533 1.8659 23.4985C0.192222 20.3437 -0.377906 16.7197 0.246295 13.2034C0.870496 9.68717 2.65314 6.4808 5.3104 4.09486C7.96766 1.70891 11.3468 0.280549 14.9097 0.0371916C17.8271 -0.162071 20.7303 0.442527 23.31 1.76746C24.2593 2.25507 24.4864 3.46834 23.888 4.35206C23.2895 5.23577 22.0923 5.45098 21.1249 5.00024C19.2758 4.13872 17.229 3.75276 15.1731 3.89318C12.4708 4.07775 9.90796 5.16108 7.89259 6.97067C5.87722 8.78027 4.52519 11.2121 4.05177 13.879C3.57836 16.5459 4.01076 19.2944 5.28015 21.6871C6.54954 24.0798 8.58292 25.9791 11.0566 27.0825C13.5302 28.1859 16.3019 28.43 18.9303 27.7759C21.5587 27.1219 23.8927 25.6073 25.5608 23.4733C26.8299 21.8497 27.658 19.9386 27.9815 17.9244C28.1507 16.8706 29.0002 16 30.0675 16Z" fill="#F4F5FA"/>
+
+        </svg>
+    </div> -->
+
+
+    <div class="card" id="card-conteiner">
+        <div >
+            <div>
+                <h2>Info</h2>
+                <p>Enter your email address</p>
+                <input type="email" placeholder="team@checkforpatent.com">
+                <hr>
+            </div>
+            <div>
+                <h2>Products</h2>
+                <p>Enter main keyword for the product</p>
+                <input type="text" placeholder="for example, sylicon wine cup">
+                <hr>
+                <p>Enter link to the similar product as reference</p>
+                <input type="text" placeholder="https://...">
+                <hr>
+                <a id="products">Add more products
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.49994 4.40454C6.24349 4.40454 6.03564 4.61239 6.03564 4.86883V10.1307C6.03564 10.3872 6.24349 10.595 6.49994 10.595C6.75638 10.595 6.96423 10.3872 6.96423 10.1307V4.86883C6.96423 4.61239 6.75638 4.40454 6.49994 4.40454Z"
+                            fill="#23C967" />
+                        <path
+                            d="M9.13147 7.03564H3.86957C3.61312 7.03564 3.40527 7.24349 3.40527 7.49994C3.40527 7.75638 3.61312 7.96423 3.86957 7.96423H9.13147C9.38791 7.96423 9.59576 7.75638 9.59576 7.49994C9.59576 7.24349 9.38791 7.03564 9.13147 7.03564Z"
+                            fill="#23C967" />
+                        <path
+                            d="M6.5 1C2.91586 1 0 3.91586 0 7.5C0 11.0841 2.91586 14 6.5 14C10.0841 14 13 11.0841 13 7.5C13 3.91586 10.0841 1 6.5 1ZM6.5 13.0714C3.42781 13.0714 0.92856 10.5722 0.92856 7.5C0.92856 4.42781 3.42781 1.92856 6.5 1.92856C9.57219 1.92856 12.0714 4.42781 12.0714 7.5C12.0714 10.5722 9.57219 13.0714 6.5 13.0714Z"
+                            fill="#23C967" />
+                    </svg>
+
+                </a>
+                <p>We offer discount up to 36% for multiple checks</p>
+            </div>
+            <button>Submit and Pay 24.99 USD</button>
+            <div class="secure-info">
+                <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.78094 7.22247C8.63507 7.04746 8.45806 6.96001 8.24963 6.96001H7.99978V5.15991C7.99978 4.00993 7.65612 3.02252 6.96859 2.19752C6.28111 1.37248 5.45835 0.959961 4.4999 0.959961C3.54147 0.959961 2.71855 1.37248 2.03112 2.19748C1.34359 3.02252 0.999938 4.0099 0.999938 5.15991V6.96001H0.749974C0.541712 6.96001 0.364589 7.04746 0.218742 7.22247C0.0728959 7.39736 0 7.6099 0 7.86005V13.26C0 13.5099 0.0729232 13.7225 0.218742 13.8976C0.364589 14.0724 0.541712 14.16 0.749974 14.16H8.24982C8.45825 14.16 8.63523 14.0725 8.78114 13.8976C8.92685 13.7225 8.99988 13.5099 8.99988 13.26V7.85995C8.99999 7.61 8.92685 7.39749 8.78094 7.22247ZM6.49986 6.96001H2.49994V5.15991C2.49994 4.49745 2.69529 3.93178 3.0859 3.46311C3.47656 2.99438 3.94787 2.76006 4.49998 2.76006C5.05214 2.76006 5.52334 2.99435 5.91403 3.46311C6.30454 3.93175 6.49986 4.49745 6.49986 5.15991V6.96001Z"
+                        fill="#AFB4CC" />
+                </svg>
+                Secure payment with Stripe
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card card-none" id="card-products">
+
+        <div >
+            <div>
+                <h2>Adding more products</h2>
+                <p>The more items you check, the better the price.</p>
+            </div>
+            <div>
+                <form>
+                    <div class="product-list">
+                        <label class="radio" for="product5">
+                            <input type="radio" name="answer" value="5" id="product5" checked>
+                            <span></span>
+                            <div for="product5">
+                                <h3>5 products for 80 usd / 16$ for each</h3>
+                                <p>You safe 36% on each patent check</p>
+                            </div>
+                        </label>
+
+                        <label class="radio" for="product4">
+                            <input type="radio" name="answer" value="4" id="product4">
+                            <span></span>
+                            <div>
+                                <h3>4 products for 72 usd / 18$ for each</h3>
+                                <p>You safe 28% on each patent check </p>
+                            </div>
+                        </label>
+                        <label class="radio" for="product3">
+                            <input type="radio" name="answer" value="3" id="product3">
+                            <span></span>
+                            <div>
+                                <h3>3 products for 60 usd / 20$ for each</h3>
+                                <p>You safe 20% on each patent check </p>
+                            </div>
+                        </label>
+                        <label class="radio" for="product2">
+                            <input type="radio" name="answer" value="2" id="product2">
+                            <span></span>
+                            <div>
+                                <h3>2 products for 44 usd / 22$ for each</h3>
+                                <p>You safe 12% on each patent check </p>
+                            </div>
+                        </label>
+                        <label class="radio" for="product1">
+                            <input type="radio" name="answer" value="1" id="product1">
+                            <span></span>
+                            <div>
+                                <h3>1 product for 24.99 usd</h3>
+                            </div>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <button>Continue</button>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
